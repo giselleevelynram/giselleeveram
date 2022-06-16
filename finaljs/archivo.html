@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>final</title>
+  </head>
+  <body>
+    <div class="container-fluidd-flex p-3 bd-highlight" style="background-color: rgb(69, 69, 70);">
+      
+        <div class="row">
+          <div class="d-flex justify-content-center col-lg-2">
+            <ul class="nav nav-pills card-header-pills">
+              <li class="nav-item">
+                  <a class="nav-link" href="#" style="color: white;"><p>Conf Bs As</p></a>
+              </li>  
+            </ul>
+        </div>
+     
+          
+        <div class="d-flex justify-content-center col-lg-10">
+            <ul class="nav nav-pills card-header-pills">
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white;"><h10>La Conferencia</h10></a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: rgb(145, 141, 141);"><h10>El lugar y la Fecha</h10></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style= "color: rgb(145, 141, 141);"><h10>Los Oradores</h10></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: rgb(145, 141, 141);"><h10>El lugar y la Fecha</h10></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: rgb(145, 141, 141)";><h10>Conviertete en Orador</h10></a>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: rgb(63, 232, 44);"><h10>Comprar tickets</h10></a>
+              </li>
+            </li>  
+          </ul>
+        </div> 
+      </div>
+    </div>
+    <br>
+    
+    <div class="row d-flex justify-content-center">
+    <div class="card col-lg-4" style="border-color: blue; width: 200px; height: 200px; margin: 3px;">
+      <div class="card-body">
+        <h5 class="card-title">Estudiante</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Tienen un descuento<br> 80%</h6>
+        <p class="card-text">*presentar documentación</p>
+       
+      
+      </div>
+    </div>
+    <div class="card col-lg-4" style="border-color: rgb(96, 188, 123); width: 200px; height: 200px; margin: 3px;">
+      <div class="card-body">
+        <h5 class="card-title">Trainee</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Tienen un descuento<br>50%</h6>
+        <p class="card-text">*presentar documentación</p>
+      </div>
+    </div>
+    <div class="card col-lg-4" style="border-color: rgb(241, 241, 19); width: 200px; height: 200px; margin: 3px;">
+      <div class="card-body">
+        <h5 class="card-title">Junior</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Tienen un descuento<br>15%</h6>
+        <p class="card-text">*presentar documentación</p>
+      </div>
+    </div>
+    </div>
+    <br>
+      
+        <div class="container d-flex justify-content-center">
+          <h8>VENTA</h8>
+        </div>
+        <div class="container d-flex justify-content-center">
+          <h4>VALOR DE TICKETS $200</h4>
+        </div>
+      
+    <form action="">
+        <div class="container-fluid">
+          <div class="row">
+              <div class="col-6">
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" id="nombre" required>
+              </div>
+              <div class="col-6">
+                <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" id="apellido" required>
+              </div>
+          </div>
+            
+            <br>
+            <div class="col-12">
+              <div class="form-floating">
+                <input type="correo" class="form-control" placeholder="correo" aria-label="correo" id="correo" required>
+                <label for="floatingInputGrid">correo</label>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+            <div class="col-6">
+              <p>cantidad</p>
+                <input type="number" class="form-control" placeholder="cantidad" aria-label="cantidad" id="cantidad" min="1" required>
+              </div>
+              <div class="col-6">
+                <p>categoria</p>
+              <select class="form-select" aria-label="categoria" id="categoria">
+                <option value="" selected>--seleccione</option>
+                <option value="0">Estudiante</option>
+                <option value="1">Trainee</option>
+                <option value="2">Junior</option>
+                <option value="3">General</option>
+              </select>
+            </div>
+            </div>
+          
+          <br>
+          <div class="alert alert-primary mt-2 mb-4 role="alert>
+            total a pagar:$ <span id= "totalPago" class="align-midle"></span>
+          </div>
+         
+         <div class="row gx-2">
+            <div class="col-md mb-3">
+            <button type="reset" class="w-100 btn btn-lg btn-form" type="button" id="btnBorrar" 
+            style="background-color: rgb(27, 239, 48);">Borrar</button>
+            </div>
+            <div class="col-md mb-3">
+              <button type="button" class="w-100 btn btn-lg btn-form" type="button" id="btnResumen" 
+              style="background-color: rgb(27, 239, 48);">Resumen</button>
+              </div>
+            
+          </div>
+          </div>
+      </form>
+  <br>
+
+
+    <footer>
+      <div class="container-fluidd-flex p-3 bd-highlight" style="background-color: rgb(69, 69, 70);">
+      
+      <div class="row">
+        <div class="d-flex justify-content-end col-lg-2">
+          <ul class="nav nav-pills card-header-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white;"><p>Preguntas</p></a>
+            </li>  
+          </ul>
+        </div>
+      <div class="col-lg-10">
+                <ul class="nav nav-pills card-header-pills">
+                    <li class="nav-item col-lg-2">
+                        <a class="nav-link" href="#" style="color: white;"><h10>Contáctanos</h10></a>
+                    </li>
+                    <li class="nav-item col-lg-1">
+                        <a class="nav-link" href="#" style= "color: white;"><h10>Prensa</h10></a>
+                    </li>
+                    <li class="nav-item col-lg-2">
+                        <a class="nav-link" href="#" style="color: white;"><h10>Conferencias</h10></a>
+                    </li>
+                    <li class="nav-item col-lg-2">
+                        <a class="nav-link" href="#" style="color: white";><h10>Terminos y<br>Condiciones</h10></a>
+                    </li>
+                    <li class="nav-item col-lg-2">
+                        <a class="nav-link" href="#" style="color: white"><h10>Privacidad</h10></a>
+                    </li>
+                    <li class="nav-item col-lg-1">
+                        <a class="nav-link" href="#" style="color: white";><h10>Estudiantes</h10></a>
+                    </li>
+                </ul>
+                   
+            </div>
+          </div>
+      </div>
+     
+                  
+    </footer>
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="archivo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  
+  </body>
+</html>
